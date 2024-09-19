@@ -1,0 +1,262 @@
+
+/* About Us Header Starting */
+.aboutus-header {
+    padding: 60px 20px;
+    background: #000; 
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    margin-top: 300px;
+}
+
+.aboutus-header h1 {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    color: #ffcc00; 
+}
+
+.aboutus-header p {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* About Us Header Ending */
+
+/* About Us Sections Starting */
+.aboutus-sections {
+    padding: 60px 20px;
+    background-color: #000; 
+    color: #fff; 
+}
+
+.aboutus-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 40px;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    color: #FFD700; 
+    position: relative;
+    display: inline-block;
+}
+
+.text-content h2:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFD700; 
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+.text-content h2:hover::after {
+    transform: scaleX(1.5); 
+}
+
+.text-content p {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #ccc; 
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reverse .section-content {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .image-content img {
+        height: 200px; 
+    }
+}
+/* About Us Sections Ending */
+
+.about-us-info {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.about-us-info h2 {
+    font-size: 36px;
+    color: #FFD700; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.about-us-info p {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-item {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-item h3 {
+    font-size: 24px;
+    color: #FFD700; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.info-item a {
+    color: #FFD700; 
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin: 40px 0;
+}
+
+.social-links h3 {
+    font-size: 24px;
+    color: #FFD700; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.social-links p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #FFD700; 
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link.twitter:hover {
+    color: #1DA1F2; 
+}
+
+.social-link.youtube:hover {
+    color: #FF0000; 
+}
+
+.social-link.linkedin:hover {
+    color: #0077B5; 
+}
+
+.map {
+    margin-top: 40px;
+}
+
+.map h3 {
+    font-size: 24px;
+    color: #FFD700; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+    
+    .info-item {
+        max-width: none;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}

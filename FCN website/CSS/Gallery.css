@@ -1,0 +1,79 @@
+/* Gallery Header */
+.gallery-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #000;
+    color: #fff;
+    margin-top: 200px; /* Removed margin-top to align with standard layout */
+}
+
+.gallery-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery-header p {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    /* Ensure consistent aspect ratio */
+    height: 300px; /* Fixed height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; /* Ensures image covers the container */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
